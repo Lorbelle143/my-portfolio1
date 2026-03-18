@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lorbelle Ganzan | Portfolio</title>
+  <meta name="description" content="Portfolio of Lorbelle Ganzan — Web Developer & Chess Enthusiast from the Philippines.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Custom cursor -->
+<div class="cursor-dot"></div>
+<div class="cursor-outline"></div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#home">LG<span class="dot">.</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav-menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#tech">Tech</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<header id="home" class="hero text-white text-center">
+  <canvas id="particles"></canvas>
+  <div class="container hero-content" data-aos="fade-up">
+    <div class="profile-pic-wrap mb-4">
+      <img src="https://scontent.fmnl25-6.fna.fbcdn.net/v/t39.30808-1/613158222_2094660221291207_3825569718745456209_n.jpg?stp=c0.0.535.535a_dst-jpg_s200x200_tt6&_nc_cat=105&ccb=1-7&_nc_sid=1d2534&_nc_ohc=1h-yn2P1A-sQ7kNvwFBVGRp&_nc_oc=Adlkic18h3aZKInRsYzr4L1H-u-_m-TrRUT9LkTtiAbQ6wNfZ4dLXRqwxgFD4ZIpdxc&_nc_zt=24&_nc_ht=scontent.fmnl25-6.fna&_nc_gid=sqt_MK9dpyM-7dVtfIgWbg&_nc_ss=8&oh=00_Afx37hrTdD1vKnwaWHWMoOboYYAgsce-XfrhmyMFOnRrLg&oe=69BFE157" alt="Lorbelle Ganzan" class="profile-pic">
+      <div class="profile-ring"></div>
+    </div>
+    <p class="hero-greeting">Hello, World! 👋</p>
+    <h1>I'm <span>Lorbelle Ganzan</span></h1>
+    <p class="hero-sub">
+      <span id="typed-text"></span><span class="typed-cursor">|</span>
+    </p>
+    <div class="hero-btns mt-4">
+      <a href="#projects" class="btn btn-gold btn-lg me-2"><i class="fas fa-rocket me-2"></i>View Projects</a>
+      <a href="#contact" class="btn btn-outline-light btn-lg me-2"><i class="fas fa-envelope me-2"></i>Hire Me</a>
+    </div>
+  </div>
+  <div class="scroll-down">
+    <a href="#about"><i class="fas fa-chevron-down"></i></a>
+  </div>
+</header>
+
+<!-- Stats -->
+<section class="stats-section">
+  <div class="container">
+    <div class="row g-0 justify-content-center">
+      <div class="col-6 col-md-3 stat-item text-center" data-aos="fade-up" data-aos-delay="0">
+        <h3 class="stat-num" data-target="2">0</h3>
+        <p>Projects Built</p>
+      </div>
+      <div class="col-6 col-md-3 stat-item text-center" data-aos="fade-up" data-aos-delay="100">
+        <h3 class="stat-num" data-target="3">0</h3>
+        <p>Tech Stack</p>
+      </div>
+      <div class="col-6 col-md-3 stat-item text-center" data-aos="fade-up" data-aos-delay="200">
+        <h3 class="stat-num" data-target="6">0</h3>
+        <p>Core Skills</p>
+      </div>
+      <div class="col-6 col-md-3 stat-item text-center" data-aos="fade-up" data-aos-delay="300">
+        <h3 class="stat-num" data-target="100">0</h3>
+        <p>% Dedication</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="section">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">About Me</h2>
+    <div class="row align-items-center g-5 mt-2">
+      <div class="col-md-5 text-center" data-aos="fade-right">
+        <div class="about-img-wrap">
+          <img src="https://scontent.fmnl25-6.fna.fbcdn.net/v/t39.30808-1/613158222_2094660221291207_3825569718745456209_n.jpg?stp=c0.0.535.535a_dst-jpg_s200x200_tt6&_nc_cat=105&ccb=1-7&_nc_sid=1d2534&_nc_ohc=1h-yn2P1A-sQ7kNvwFBVGRp&_nc_oc=Adlkic18h3aZKInRsYzr4L1H-u-_m-TrRUT9LkTtiAbQ6wNfZ4dLXRqwxgFD4ZIpdxc&_nc_zt=24&_nc_ht=scontent.fmnl25-6.fna&_nc_gid=sqt_MK9dpyM-7dVtfIgWbg&_nc_ss=8&oh=00_Afx37hrTdD1vKnwaWHWMoOboYYAgsce-XfrhmyMFOnRrLg&oe=69BFE157" alt="Lorbelle Ganzan" class="about-img rounded-circle">
+          <div class="about-badge"><i class="fas fa-chess-king"></i></div>
+        </div>
+      </div>
+      <div class="col-md-7" data-aos="fade-left">
+        <span class="section-label">Get to know me</span>
+        <h3 class="mb-3 mt-2">Who am I?</h3>
+        <p class="about-text">
+          A quiet and focused chess player who values strategy, patience, and critical thinking. I prefer working independently and thrive in environments that require deep concentration and logical decision-making.
+        </p>
+        <p class="about-text">
+          Through chess, I developed strong analytical skills, discipline, and the ability to think several steps ahead — skills I bring directly into web development to build clean, functional digital experiences.
+        </p>
+        <div class="about-info mt-4 d-flex flex-wrap gap-3">
+          <span class="info-chip"><i class="fas fa-map-marker-alt me-2"></i>Philippines</span>
+          <span class="info-chip"><i class="fas fa-chess me-2"></i>Chess Player</span>
+          <span class="info-chip"><i class="fas fa-code me-2"></i>Web Developer</span>
+          <span class="info-chip"><i class="fas fa-graduation-cap me-2"></i>Student</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="section skills-section">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">Skills</h2>
+    <p class="section-sub" data-aos="fade-up">What I bring to the table</p>
+    <div class="row g-4 mt-2 justify-content-center">
+      <div class="col-6 col-md-4 col-lg-2" data-aos="zoom-in" data-aos-delay="0">
+        <div class="skill-card text-center p-4">
+          <i class="fas fa-chess-knight skill-icon"></i>
+          <p>Strategic Thinking</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2" data-aos="zoom-in" data-aos-delay="100">
+        <div class="skill-card text-center p-4">
+          <i class="fas fa-clock skill-icon"></i>
+          <p>Time Management</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2" data-aos="zoom-in" data-aos-delay="200">
+        <div class="skill-card text-center p-4">
+          <i class="fas fa-lightbulb skill-icon"></i>
+          <p>Problem Solving</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2" data-aos="zoom-in" data-aos-delay="300">
+        <div class="skill-card text-center p-4">
+          <i class="fas fa-brain skill-icon"></i>
+          <p>Critical Analysis</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2" data-aos="zoom-in" data-aos-delay="400">
+        <div class="skill-card text-center p-4">
+          <i class="fas fa-code skill-icon"></i>
+          <p>Web Development</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2" data-aos="zoom-in" data-aos-delay="500">
+        <div class="skill-card text-center p-4">
+          <i class="fas fa-user skill-icon"></i>
+          <p>Independent Work</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Tech Stack -->
+<section id="tech" class="section tech-section">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">Tech Stack</h2>
+    <p class="section-sub" data-aos="fade-up">Technologies I work with</p>
+    <div class="row g-4 mt-2 justify-content-center">
+      <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="0">
+        <div class="tech-card text-center p-4">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="tech-icon">
+          <p class="tech-name">HTML5</p>
+          <div class="tech-bar"><div class="tech-fill" style="width:90%"></div></div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="100">
+        <div class="tech-card text-center p-4">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" class="tech-icon">
+          <p class="tech-name">CSS3</p>
+          <div class="tech-bar"><div class="tech-fill" style="width:85%"></div></div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="200">
+        <div class="tech-card text-center p-4">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="tech-icon">
+          <p class="tech-name">JavaScript</p>
+          <div class="tech-bar"><div class="tech-fill" style="width:75%"></div></div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="300">
+        <div class="tech-card text-center p-4">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" class="tech-icon">
+          <p class="tech-name">Bootstrap</p>
+          <div class="tech-bar"><div class="tech-fill" style="width:80%"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="section">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">Projects</h2>
+    <p class="section-sub" data-aos="fade-up">Things I've built</p>
+    <div class="row g-4 mt-2 justify-content-center">
+
+      <div class="col-md-6 col-lg-5" data-aos="fade-up" data-aos-delay="100">
+        <div class="project-card h-100">
+          <div class="project-img-wrap">
+            <img src="https://placehold.co/600x300/1a1a2e/ffc107?text=🔐+Encryption+App" alt="Encryption App" class="project-img">
+            <div class="project-overlay">
+              <a href="https://encryption12.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-gold btn-sm"><i class="fas fa-external-link-alt me-1"></i>Live Demo</a>
+            </div>
+            <span class="project-badge">Live</span>
+          </div>
+          <div class="project-body p-4">
+            <h5 class="project-title">Encryption App</h5>
+            <p class="project-desc">A web-based encryption tool that lets users encrypt and decrypt text securely using various cipher techniques.</p>
+            <div class="project-tags">
+              <span class="tag">Web App</span>
+              <span class="tag">Security</span>
+              <span class="tag">Encryption</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-5" data-aos="fade-up" data-aos-delay="200">
+        <div class="project-card h-100">
+          <div class="project-img-wrap">
+            <img src="https://placehold.co/600x300/1a1a2e/ffc107?text=📦+Inventory+System" alt="Inventory Form" class="project-img">
+            <div class="project-overlay">
+              <a href="https://inventory-form-gamma.vercel.app/login" target="_blank" rel="noopener noreferrer" class="btn btn-gold btn-sm"><i class="fas fa-external-link-alt me-1"></i>Live Demo</a>
+            </div>
+            <span class="project-badge">Live</span>
+          </div>
+          <div class="project-body p-4">
+            <h5 class="project-title">Inventory Form System</h5>
+            <p class="project-desc">A full-featured inventory management system with login authentication, form handling, and item tracking capabilities.</p>
+            <div class="project-tags">
+              <span class="tag">Web App</span>
+              <span class="tag">Inventory</span>
+              <span class="tag">Auth</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="section contact-section">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">Contact Me</h2>
+    <p class="section-sub" data-aos="fade-up">Let's work together</p>
+    <div class="row justify-content-center mt-4 g-4">
+
+      <div class="col-md-4" data-aos="fade-right">
+        <div class="contact-info-card p-4 h-100">
+          <h5 class="mb-4 text-white">Let's Connect</h5>
+          <div class="contact-info-item mb-3">
+            <div class="contact-info-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <p class="ci-label">Email</p>
+              <a href="mailto:lorbelleganzan@gmail.com" class="ci-value">lorbelleganzan@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-info-item mb-3">
+            <div class="contact-info-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <p class="ci-label">Phone</p>
+              <a href="tel:09366012296" class="ci-value">09366012296</a>
+            </div>
+          </div>
+          <div class="contact-info-item mb-3">
+            <div class="contact-info-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <p class="ci-label">Location</p>
+              <span class="ci-value">Philippines</span>
+            </div>
+          </div>
+          <div class="contact-info-item mb-3">
+            <div class="contact-info-icon ci-fb"><i class="fab fa-facebook-f"></i></div>
+            <div>
+              <p class="ci-label">Facebook</p>
+              <a href="https://www.facebook.com/lorbelle.ganzan.7" target="_blank" rel="noopener noreferrer" class="ci-value">lorbelle.ganzan.7</a>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon ci-tiktok"><i class="fab fa-tiktok"></i></div>
+            <div>
+              <p class="ci-label">TikTok</p>
+              <a href="https://www.tiktok.com/@raitoganzan" target="_blank" rel="noopener noreferrer" class="ci-value">@raitoganzan</a>
+            </div>
+          </div>
+          <div class="contact-info-item mt-3">
+            <div class="contact-info-icon ci-github"><i class="fab fa-github"></i></div>
+            <div>
+              <p class="ci-label">GitHub</p>
+              <a href="https://github.com/Lorbelle143" target="_blank" rel="noopener noreferrer" class="ci-value">Lorbelle143</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6" data-aos="fade-left">
+        <form id="contactForm" class="contact-form p-5 rounded-4 shadow"
+              action="https://formspree.io/f/mvzwvnay"
+              method="POST">
+          <div class="mb-3">
+            <label class="form-label">Name</label>
+            <input type="text" name="name" class="form-control" placeholder="Your name" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" name="email" class="form-control" placeholder="your@email.com" required>
+          </div>
+          <div class="mb-4">
+            <label class="form-label">Message</label>
+            <textarea name="message" class="form-control" rows="5" placeholder="Write your message..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-gold w-100 py-3" id="submitBtn">
+            <i class="fas fa-paper-plane me-2"></i>Send Message
+          </button>
+          <div id="formResult" class="mt-3 text-center" style="display:none;"></div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <p class="mb-1">Designed & Built by <span class="text-gold">Lorbelle Ganzan</span></p>
+    <p class="footer-sub">&copy; 2026 · All rights reserved</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="css/js/main.js"></script>
+</body>
+</html>
