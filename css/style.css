@@ -605,3 +605,80 @@ footer {
   .stat-item + .stat-item { border-left: none; border-top: 1px solid rgba(255,255,255,0.07); }
   .cursor-dot, .cursor-outline { display: none; }
 }
+
+/* ===== ENHANCEMENTS ===== */
+
+/* Glowing name in hero */
+.hero h1 span {
+  text-shadow: 0 0 30px rgba(255,193,7,0.5), 0 0 60px rgba(255,193,7,0.2);
+}
+
+/* Gradient border on profile pic */
+.profile-pic-wrap::before {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border-radius: 34px;
+  background: linear-gradient(135deg, var(--gold), #0d6efd, var(--gold));
+  background-size: 200% 200%;
+  animation: gradientShift 4s ease infinite;
+  z-index: 0;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Glassmorphism on skill & tech cards */
+.skill-card, .tech-card {
+  backdrop-filter: blur(10px);
+}
+
+/* Section title gradient text */
+.section-title {
+  background: linear-gradient(135deg, #fff 60%, var(--gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Glowing project card on hover */
+.project-card:hover {
+  box-shadow: 0 25px 60px rgba(0,0,0,0.5), 0 0 30px rgba(255,193,7,0.08);
+}
+
+/* Navbar active link underline */
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 50%;
+  width: 0; height: 2px;
+  background: var(--gold);
+  border-radius: 2px;
+  transition: all 0.3s;
+  transform: translateX(-50%);
+}
+
+.nav-link:hover::after { width: 60%; }
+
+/* Smooth glow on btn-gold */
+.btn-gold {
+  box-shadow: 0 4px 20px rgba(255,193,7,0.2);
+}
+
+/* About section image glow */
+.about-img {
+  box-shadow: 0 0 0 4px rgba(255,193,7,0.15), 0 0 60px rgba(255,193,7,0.12);
+}
+
+/* Contact form button glow */
+#submitBtn:hover {
+  box-shadow: 0 8px 30px rgba(255,193,7,0.4);
+}
+
+/* Stat numbers glow */
+.stat-num {
+  text-shadow: 0 0 20px rgba(255,193,7,0.3);
+}
