@@ -65,7 +65,7 @@ function animateParticles() {
 animateParticles();
 
 // ===== TYPING ANIMATION =====
-const phrases = ['Web Developer', 'Chess Enthusiast', 'Problem Solver', 'Creative Thinker'];
+const phrases = ['Web Developer', 'Problem Solver', 'Creative Thinker', 'UI Enthusiast'];
 let phraseIndex = 0, charIndex = 0, deleting = false;
 const typedEl = document.getElementById('typed-text');
 
@@ -167,3 +167,60 @@ document.getElementById('contactForm').addEventListener('submit', function () {
   btn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Sending...';
   btn.disabled = true;
 });
+
+// ===== SCROLL PROGRESS BAR =====
+const progressBar = document.getElementById('scroll-progress');
+window.addEventListener('scroll', () => {
+  const scrollTop = window.scrollY;
+  const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+  progressBar.style.width = (scrollTop / docHeight * 100) + '%';
+});
+
+// ===== TILT EFFECT ON CARDS =====
+document.querySelectorAll('.skill-card, .tech-card, .project-card').forEach(card => {
+  card.addEventListener('mousemove', e => {
+    const rect = card.getBoundingClientRect();
+    const x = (e.clientX - rect.left) / rect.width - 0.5;
+    const y = (e.clientY - rect.top) / rect.height - 0.5;
+    card.style.transform = `perspective(600px) rotateY(${x * 10}deg) rotateX(${-y * 10}deg) translateY(-6px)`;
+  });
+  card.addEventListener('mouseleave', () => {
+    card.style.transform = '';
+  });
+});
+
+// ===== PARTICLE CONNECTIONS =====
+function drawConnections() {
+  particles.forEach((p, i) => {
+    particles.slice(i + 1).forEach(p2 => {
+      const dist = Math.hypot(p.x - p2.x, p.y - p2.y);
+      if (dist < 100) {
+        ctx.beginPath();
+        ctx.moveTo(p.x, p.y);
+        ctx.lineTo(p2.x, p2.y);
+        ctx.strokeStyle = `rgba(255,193,7,${0.08 * (1 - dist / 100)})`;
+        ctx.lineWidth = 0.5;
+        ctx.stroke();
+      }
+    });
+  });
+}
+
+// Patch animateParticles to include connections
+cancelAnimationFrame(window._particleFrame);
+function animateParticlesEnhanced() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  drawConnections();
+  particles.forEach(p => {
+    ctx.beginPath();
+    ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+    ctx.fillStyle = `rgba(255,193,7,${p.alpha})`;
+    ctx.fill();
+    p.x += p.dx;
+    p.y += p.dy;
+    if (p.x < 0 || p.x > canvas.width) p.dx *= -1;
+    if (p.y < 0 || p.y > canvas.height) p.dy *= -1;
+  });
+  window._particleFrame = requestAnimationFrame(animateParticlesEnhanced);
+}
+animateParticlesEnhanced();
